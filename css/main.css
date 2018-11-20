@@ -1,7 +1,6 @@
 html {
   box-sizing: border-box;
-  font-family: "Open Sans", sans-serif;
-  line-height: 1.5;
+  font: normal 100%/1.5 "Open Sans", sans-serif;
 }
 
 *, *::before, *::after {
@@ -18,45 +17,41 @@ body {
   overflow: hidden;
 }
 
+.img-flex {
+  width: 100%;
+  display: block;
+}
+
 .banner-content {
   position: absolute;
+  bottom: 1em;
+  width: 100%;
   max-width: 50em;
-  padding: 0 1rem;
-  bottom: 1rem;
   left: 50%;
-  width: 100%;
   transform: translateX(-50%);
+  padding-left: 1.35em;
+  padding-right: 1em;
+  padding-bottom: .5em;
 }
 
-.img-flex {
-  display: block;
-  width: 100%;
-}
-
-h1 {
-  margin: 0;
+.banner-content h2,
+.banner-content p {
+  margin: 0 auto;
 }
 
 h2 {
-  color: #fff;
-  margin: 0;
-  font-size: 4rem;
-  font-weight: bold;
+  display: inline;
   line-height: 1.4;
-}
-
-span {
   background-color: rgba(0, 0, 0, .5);
+  color: #fff;
+  font-size: 4rem;
+  text-align: left;
+  font-weight: bold;
 }
 
 p {
   font-size: 2rem;
   font-style: italic;
   padding-top: 1rem;
-  padding-bottom: .5rem;
-}
-
-.banner-content h2,
-.banner-content p {
-  margin: 0;
+  text-align: left;
 }
